@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+
         <Route path="/conversations" element={<ConversationPage />}>
           <Route path=":id" element={<ConversationChannelPage />} />
         </Route>
