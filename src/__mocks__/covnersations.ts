@@ -1,4 +1,4 @@
-import { CoversationType } from "./../utils/types";
+import { ConversationType } from "./../utils/types";
 
 export default [
   {
@@ -157,4 +157,4 @@ export default [
     name: "diako moardi",
     lastMessage: "perfect",
   },
-] as CoversationType[];
+] as ConversationType[];

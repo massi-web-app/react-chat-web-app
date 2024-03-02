@@ -7,12 +7,12 @@ import {
 import { useNavigate } from "react-router-dom";
 import { TbEdit as AddConversations } from "react-icons/tb";
 import { FC } from "react";
-import { CoversationType } from "../../utils/types";
+import { ConversationType } from "../../utils/types";
 
 import styles from "./index.module.scss";
 
 type Props = {
-  conversations: CoversationType[];
+  conversations: ConversationType[];
 };
 
 export const ConversationSidebar: FC<Props> = ({ conversations }) => {
