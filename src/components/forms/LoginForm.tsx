@@ -45,7 +45,7 @@ const LoginForm = () => {
       <div className={styles.footerText}>
         <span>Don't have account?</span>
         <Link to="/register">
-          <span>register</span>
+          <span>Register</span>
         </Link>
       </div>
     </form>

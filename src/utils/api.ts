@@ -2,12 +2,17 @@ import axios, {AxiosRequestConfig} from 'axios';
 import {CreateUserParams} from "./types";
 
 
+const API_URL = process.env.REACT_APP_API_URL;
+
+
+
+
+
+const axiosClient = axios.create({ baseURL: API_URL });
 const config: AxiosRequestConfig = {withCredentials: true};
-const APP_URL = process.env.REACT_APP_API_URL;
 
-console.log(`${APP_URL}/auth/register`);
-
-
+console.log("axios",axiosClient);
 
 export const postRegisterUser = async (data: CreateUserParams) =>
-    axios.post(`${APP_URL}/auth/register`, data, config)
+    axiosClient.post(`/auth/register`, data, config)
+
