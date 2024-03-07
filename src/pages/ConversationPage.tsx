@@ -7,7 +7,6 @@ import mockConversations from "../__mocks__/covnersations";
 export const ConversationPage = () => {
   const { id } = useParams();
 
-  console.log(id);
 
   return (
     <Page>

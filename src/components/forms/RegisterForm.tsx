@@ -22,10 +22,8 @@ const RegisterForm = () => {
     const onSubmit = async (data: CreateUserParams) => {
         try {
             await postRegisterUser(data);
-        } catch (err:any) {
-
-            console.log("err", err.response());
-
+        } catch (err) {
+            console.log("err", err);
         }
     };
 

@@ -22,139 +22,47 @@ export default [
     name: "diako moardi",
     lastMessage: "perfect",
   },
+
   {
-    id: 4,
+    id: 5,
+    name: "diako moardi",
+    lastMessage: "perfect",
+  },
+
+
+  {
+    id: 6,
+    name: "diako moardi",
+    lastMessage: "perfect",
+  },
+
+
+  {
+    id: 7,
+    name: "diako moardi",
+    lastMessage: "perfect",
+  },
+
+
+  {
+    id: 8,
     name: "diako moardi",
     lastMessage: "perfect",
   },
   {
-    id: 4,
+    id: 9,
     name: "diako moardi",
     lastMessage: "perfect",
   },
   {
-    id: 4,
+    id: 10,
     name: "diako moardi",
     lastMessage: "perfect",
   },
   {
-    id: 4,
+    id: 11,
     name: "diako moardi",
     lastMessage: "perfect",
   },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
-  {
-    id: 4,
-    name: "diako moardi",
-    lastMessage: "perfect",
-  },
+
 ] as ConversationType[];
