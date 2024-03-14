@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import {Route, Routes} from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
@@ -6,11 +6,14 @@ import LoginPage from "./pages/LoginPage";
 import {ConversationPage} from "./pages/ConversationPage";
 import {ConversationChannelPage} from "./pages/ConversationChannelPage";
 import {AuthenticatedRoute} from "./components/auth/AuthenticatedRoute";
+import {AuthContext} from "./utils/context/AuthContext";
+import {User} from "./utils/types";
 
 
 function App() {
+    const [user, setUser] = useState<User>();
     return (
-        <>
+        <AuthContext.Provider value={{user,updateAuthUser:setUser}}>
             <Routes>
                 <Route path="/register" element={<RegisterPage/>}/>
                 <Route path="/login" element={<LoginPage/>}/>
@@ -23,12 +26,9 @@ function App() {
                     <Route path=":id" element={<ConversationChannelPage/>}/>
                 </Route>
             </Routes>
-        </>
+        </AuthContext.Provider>
     );
 }
-
-
-
 
 
 export default App;
