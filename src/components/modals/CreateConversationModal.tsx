@@ -36,7 +36,7 @@ export const CreateConversationModal:FC<Props> = ({setShowModal}) => {
                     <h2>
                         Create a Conversation
                     </h2>
-                    <MdClose size={28} color={"red"} onClick={()=>setShowModal(false)}/>
+                    <MdClose size={28}  onClick={()=>setShowModal(false)}/>
                 </ModalHeader>
                 <ModalContentBody>
                     <CreateConversationForm/>

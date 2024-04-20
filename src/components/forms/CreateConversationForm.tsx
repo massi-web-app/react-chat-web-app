@@ -1,12 +1,7 @@
 import {Button, InputContainer, InputField, InputLabel, TextField} from "../../utils/styles";
 import styles from './index.module.scss';
-import {createRef, useEffect} from "react";
 
 export const CreateConversationForm = () => {
-
-
-
-
     return (
         <form className={styles.createConversationForm} >
             <section>
@@ -24,7 +19,6 @@ export const CreateConversationForm = () => {
             </section>
 
             <Button onClick={(e) => e.preventDefault()}>Create Conversation</Button>
-
 
         </form>
     )
