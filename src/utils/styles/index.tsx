@@ -80,6 +80,7 @@ export const ConversationSidebarHeader = styled.header`
     padding: 0 32px;
     background-color: #151515;
     height: 100px;
+    border-bottom: 1px solid #484848;
 
     & h1 {
         font-weight: 400;
@@ -91,7 +92,10 @@ export const ConversationChannelPageStyle = styled.div`
     margin-left: ${SIDEBAR_WIDTH}px;
 `;
 
-export const ConversationSidebarContainer = styled.div``;
+export const ConversationSidebarContainer = styled.div`
+    margin-top: 100px;
+
+`;
 
 export const ConversationSidebarItem = styled.div`
     display: flex;
