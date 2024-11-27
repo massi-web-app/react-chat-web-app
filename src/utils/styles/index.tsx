@@ -12,7 +12,7 @@ export const Page = styled.div<PageProps>`
 
 export const InputContainer = styled.div<InputContainerProps>`
     box-sizing: border-box;
-    background-color: ${(prop)=>prop.backgroundColor || '#131313'};
+    background-color: ${(prop) => prop.backgroundColor || '#131313'};
     padding: 12px 16px;
     border-radius: 10px;
     width: 100%;
@@ -127,15 +127,15 @@ export const ModalContainerStyle = styled.div`
 `;
 
 export const ModalHeaderStyle = styled.header`
-    padding:0 24px;
+    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 24px;
-    
-    & h2{
+
+    & h2 {
         font-weight: 400;
-        margin:0;
+        margin: 0;
     }
 `;
 
@@ -152,7 +152,74 @@ export const TextField = styled.textarea`
     color: #fff;
     margin: 4px 0;
     resize: none;
-    ::-webkit-scrollbar{
+
+    ::-webkit-scrollbar {
         display: none;
     }
 `;
+
+
+export const MessagePanelStyle = styled.div`
+    background: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 32px;
+
+`
+
+export const MessageContainerStyle = styled.div`
+    height: 100%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+`;
+
+
+export const MessageInputContainer = styled.div`
+    box-sizing: border-box;
+    background-color: #101010;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 25px;
+`;
+
+export const MessageInput = styled.input`
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: #454545;
+    font-family: inherit;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 4px 0;
+`;
+
+export const MessageItemContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+`
+
+export const MessageItemAvatar = styled.div`
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #d32929;
+`
+
+export const MessageItemDetails = styled.div`
+`;
+
+export const MessageItemHeader=styled.div`
+    
+    .name{
+        display: ;
+    }
+`

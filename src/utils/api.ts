@@ -18,3 +18,6 @@ export const getUserAuth = async () => axiosClient.get<User>(`/auth/status`, con
 
 
 export const getConversations= async ()=>axiosClient.get(`/conversations`,config);
+
+
+export const getConversationMessages=async (id:number)=>axiosClient.get(`/messages/${id}`,config)
