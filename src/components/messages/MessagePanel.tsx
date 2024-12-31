@@ -1,8 +1,9 @@
-import {MessagePanelStyle} from "../../utils/styles";
+import {MessagePanelBody, MessagePanelStyle} from "../../utils/styles";
 import {MessageContainer} from "./MessageContainer";
 import {MessageInputField} from "./MessageInputField";
+import React, {FC} from "react";
+import {MessagePanelHeader} from "./MessagePanelHeader";
 import {MessageType} from "../../utils/types";
-import {FC} from "react";
 
 type Props = {
     messages: MessageType[]
@@ -11,8 +12,11 @@ export const MessagePanel: FC<Props> = ({messages}) => {
 
     return (
         <MessagePanelStyle>
-            <MessageContainer messages={messages}/>
-            <MessageInputField/>
+            <MessagePanelHeader></MessagePanelHeader>
+            <MessagePanelBody>
+                <MessageContainer messages={messages}/>
+                <MessageInputField/>
+            </MessagePanelBody>
         </MessagePanelStyle>
     )
 }

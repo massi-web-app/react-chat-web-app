@@ -162,20 +162,23 @@ export const TextField = styled.textarea`
 export const MessagePanelStyle = styled.div`
     background: inherit;
     height: 100%;
+    box-sizing: border-box;
+    position: relative;
+`
+export const MessagePanelBody = styled.div`
+    height: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 32px;
-
+    padding: 32px; 
 `
 
 export const MessageContainerStyle = styled.div`
     height: 100%;
-    border: 1px solid #fff;
     box-sizing: border-box;
     padding: 10px 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     overflow-y: scroll;
 `;
 
@@ -204,6 +207,7 @@ export const MessageItemContainer = styled.div`
     display: flex;
     gap: 20px;
     align-items: center;
+    padding: 5px 0;
 
 `
 
@@ -211,15 +215,44 @@ export const MessageItemAvatar = styled.div`
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: #d32929;
+    background-color: #ff5a5a;
 `
 
 export const MessageItemDetails = styled.div`
 `;
 
-export const MessageItemHeader=styled.div`
-    
-    .name{
-        display: ;
+export const MessageItemHeader = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .time {
+        color: #6D6D6D;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .authorName {
+        font-weight: bold;
+        font-size: 16px;
+
     }
 `
+
+export const MessageItemContent = styled.div``;
+
+
+export const MessagePanelHeaderStyle = styled.header`
+    background: #151515;
+    border-bottom: 1px solid #545454;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 1000%;
+`;

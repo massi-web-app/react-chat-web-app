@@ -27,10 +27,6 @@ export const ConversationChannelPage = () => {
     return (
         <ConversationChannelPageStyle>
            <MessagePanel messages={messages}/>
-
-            {/*{messages.map((message)=>(*/}
-            {/*    <div>{message.content}</div>*/}
-            {/*))}*/}
         </ConversationChannelPageStyle>
     );
 };
