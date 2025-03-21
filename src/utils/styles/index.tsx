@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {InputContainerProps, PageProps} from "./styleTypes";
+import {InputContainerProps, MessageItemContentProps, PageProps} from "./styleTypes";
 
 export const SIDEBAR_WIDTH = 400;
 
@@ -170,7 +170,7 @@ export const MessagePanelBody = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 32px; 
+    padding: 32px;
 `
 
 export const MessageContainerStyle = styled.div`
@@ -239,7 +239,11 @@ export const MessageItemHeader = styled.div`
     }
 `
 
-export const MessageItemContent = styled.div``;
+export const MessageItemContent = styled.div<MessageItemContentProps>`
+
+    padding: ${({padding}) => padding}
+
+`;
 
 
 export const MessagePanelHeaderStyle = styled.header`
