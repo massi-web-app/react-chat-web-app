@@ -258,5 +258,4 @@ export const MessagePanelHeaderStyle = styled.header`
     position: absolute;
     right: 0;
     left: 0;
-    width: 1000%;
 `;
