@@ -161,12 +161,12 @@ export const TextField = styled.textarea`
 
 export const MessagePanelStyle = styled.div`
     background: inherit;
-    height: 100%;
+    height: calc(100% - 100px);
     box-sizing: border-box;
     position: relative;
 `
 export const MessagePanelBody = styled.div`
-    height: 100%;
+    height: calc(100%);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -219,6 +219,7 @@ export const MessageItemAvatar = styled.div`
 `
 
 export const MessageItemDetails = styled.div`
+    flex-grow: 1;
 `;
 
 export const MessageItemHeader = styled.div`
@@ -255,7 +256,7 @@ export const MessagePanelHeaderStyle = styled.header`
     align-items: center;
     padding: 0 32px;
     box-sizing: border-box;
-    position: absolute;
-    right: 0;
     left: 0;
-`;
+    top: 0;
+    width: 100%;
+` ;
